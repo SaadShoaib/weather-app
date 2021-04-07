@@ -16,7 +16,7 @@ function handleKeyPress(e) {
 
 //fetching data from the api
 function getWeather(query){
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${key}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${key}`)
         .then(response => response.json())
         .then(displayWeather)
 }
